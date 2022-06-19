@@ -259,6 +259,12 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     searchBook();
   });
+
+  const resetBtn = document.querySelector(".reset-btn");
+  resetBtn.addEventListener("click", () => {
+    document.getElementById("pencarian").value = "";
+    searchBook();
+  });
 });
 
 const searchBook = () => {

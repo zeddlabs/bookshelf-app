@@ -2,7 +2,7 @@
 
 :root {
   --primary: hsl(217, 91%, 60%);
-  --gray: rgb(148, 163, 184);
+  --gray: hsl(215, 20%, 65%);
   --bg-body: rgb(248, 250, 252);
   --paragraph-color: rgb(51, 65, 85);
   --dark: rgb(15, 23, 42);
@@ -107,8 +107,13 @@ header {
   font-size: 12px;
 }
 
-.submit-btn,
-.cari-btn {
+.form-search-bottom {
+  display: flex;
+  justify-content: end;
+  gap: 0.25rem;
+}
+
+.submit-btn {
   border: none;
   outline: none;
   background-color: var(--primary);
@@ -171,7 +176,9 @@ header {
 
 .hapus-btn,
 .selesai-btn,
-.kembalikan-btn {
+.kembalikan-btn,
+.reset-btn,
+.cari-btn {
   padding: 0.25rem 0.5rem;
   border: none;
   outline: none;
@@ -180,6 +187,18 @@ header {
   color: #fff;
   font-size: 1.25rem;
   border-radius: 0.25rem;
+}
+
+.cari-btn {
+  background-color: var(--primary);
+}
+
+.reset-btn {
+  background-color: var(--gray);
+}
+
+.reset-btn:hover {
+  background-color: hsl(215, 20%, 55%);
 }
 
 .hapus-btn {
