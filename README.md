@@ -17,7 +17,7 @@ Dicoding hadir sebagai platform pendidikan teknologi yang membantu menghasilkan 
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./new_screenshot.png)
 
 ### Features
 
