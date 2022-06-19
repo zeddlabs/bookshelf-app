@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Bookshelf Apps</h1>
+        </header>
+
+        <div class="top">
+            <div class="form-container">
+                <h2 class="title">Tambah Buku Baru</h2>
+                <form id="formDataBuku" action="" method="post">
+                    <div class="form-group">
+                        <input type="text" name="judul" id="judul" placeholder="">
+                        <label for="judul">Judul</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="text" name="penulis" id="penulis" placeholder="">
+                            <label for="penulis">Penulis</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="tahun" id="tahun" placeholder="">
+                            <label for="tahun">Tahun</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="isRead" id="isRead" placeholder="">
+                        <label for="isRead">Sudah selesai dibaca</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Simpan</button>
+                </form>
+            </div>
+            <div class="cari-container">
+                <h2 class="title">Cari Buku</h2>
+                <form id="formSearch" action="" method="post">
+                    <div class="form-group">
+                        <input type="text" name="pencarian" id="pencarian" placeholder="">
+                        <label for="pencarian">Cari Buku</label>
+                    </div>
+                    <button type="submit" class="cari-btn">Cari</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="left-container">
+                <h2 class="title">Buku Belum Dibaca</h2>
+                <div id="belumDibaca">
+                </div>
+            </div>
+            <div class="right-container">
+                <h2 class="title">Buku Sudah Dibaca</h2>
+                <div id="sudahDibaca">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
